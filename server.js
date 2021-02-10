@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use('/api',appRoute)
 app.get('*', function (req, res) {
 
-    res.sendFile(path.join(__dirname + '/public/views/index.html')); // this might need to be lower than the routes..
+    res.sendFile(path.join(__dirname + '/index.html')); // this might need to be lower than the routes..
 });
 //require('./app/routes.js')(app);
 app.listen(port);
